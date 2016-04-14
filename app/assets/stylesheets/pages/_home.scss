@@ -8,10 +8,10 @@
   justify-content: center;
   position: relative;
 }
-.banner-inscription {
+.banner-parcours {
   color: white;
   text-align: center;
-  height: 30vh;
+  height: 40vh;
   background-size: cover !important;
   display: flex;
   align-items: center;
@@ -19,7 +19,7 @@
   position: relative;
 }
 .banner h1 {
-  font-size: 50px;
+  font-size: 38px;
   font-weight: bold;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
 }
@@ -27,15 +27,19 @@
   font-size: 25px;
   font-weight: lighter;
   color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 50px;
+  margin-bottom: 10px;
+}
+.row-parcours p {
+  margin-left: 417px;
+  margin-right: 220px;
 }
 .fade-and-slide {
-    position: relative;
-    top: -20px;
-    opacity: 0;
-    animation: fadeAndSlide 2s 1s ease forwards;
-    -webkit-animation: fadeAndSlide 2s 1s ease forwards;
-    -moz-animation: fadeAndSlide 2s 1s ease forwards;
+  position: relative;
+  top: -20px;
+  opacity: 0;
+  animation: fadeAndSlide 2s 1s ease forwards;
+  -webkit-animation: fadeAndSlide 2s 1s ease forwards;
+  -moz-animation: fadeAndSlide 2s 1s ease forwards;
 }
 .banner-arrow {
   position: absolute;
@@ -46,4 +50,7 @@
 .banner-arrow:hover {
   color: white;
   text-shadow: 0px 0px 17px rgba(255, 255, 255, 1);
+}
+.wrapper-grey {
+  background: #F4F4F4;
 }

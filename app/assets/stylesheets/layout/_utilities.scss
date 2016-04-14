@@ -6,10 +6,11 @@
 
 // Paddings
 .padded {
-  padding-top: 5em;
-  padding-bottom: 5em;
+  padding: 60px 0;
 }
-
+.padded-presentation {
+  padding: 10px 0 40px 0;
+}
 // Backgrounds
 .bg-black {
   background: #4a4a4a;

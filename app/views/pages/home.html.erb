@@ -1,180 +1,176 @@
-    <div class="banner" style="background: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/top_1_HP.jpg');">
-      <div class="banner-content">
-        <h1>Crèche La Courte Échelle à Toulouse</h1>
-        <p>Bienvenue dans notre crèche associative à gestion parentale</p>
-        <a href="#info" class="banner-arrow floating"><i class="fa fa-angle-double-down"></i></a>
-      </div>
-    </div>
+<!-- Banner -->
+<div class="banner" style="background: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(<%= asset_path "HP_6_2.JPG"%>);">
+  <div class="banner-content">
+    <h1>Réparez vous-même votre panne de plomberie
+    <br>ou de chauffage avec l'aide d'un pro</h1>
+    <p>Plus rapide, moins cher, plus sûr</p>
+    <%= link_to "Décrire ma panne", "https://laurent30.typeform.com/to/vdixHQ", :target => "_blank", class: "navbar-wagon-item navbar-wagon-button btn" %>
+    <div><a href="#info" class="banner-arrow floating"><i class="fa fa-angle-double-down"></i></a></div>
+  </div>
+</div>
 
-    <div class="padded-picto text-center" id="info">
-      <div class="container">
-        <div class="col-xs-12 col-sm-3">
-          <div class="features">
-            <img src="images/children.png">
-            <br>
-            <h2>28 enfants</h2>
-            <p>
-              La crèche accueille 28 familles pour 12 salariées. Le nombre d'enfants accueillis permet de créer une ambiance chaleureuse et familiale. Les enfants sont regroupés en 2 groupes : bébés et moyens/grands.
-            </p>
-            </div>
-          </div>
-        <div class="col-xs-12 col-sm-3">
-          <div class="features">
-            <img src="images/permanences.png">
-            <br>
-            <h2>1 matinée par mois</h2>
-            <p>
-              Chaque parent offre un peu de son temps à la gestion de la crèche : en plus des permanences (1 matinée par mois), les parents sont impliqués dans l'une des commissions, et dans les diverses réunions.
-            </p>
-            </div>
-          </div>
-        <div class="col-xs-12 col-sm-3">
-          <div class="features">
-            <img src="images/space.png">
-            <br>
-            <h2>355m<sup>2</sup> + 200m<sup>2</sup></h2>
-            <p>
-              Située au 45 bis boulevard Matabiau, la crèche dispose d'un intérieur de 355m<sup>2</sup> et d'une terrasse de 200m<sup>2</sup> incluant des structures ludiques : au total, elle compte 2 toboggans pour le bonheur des enfants !
-            </p>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-3">
-          <div class="features">
-            <img src="images/employees.png">
-            <br>
-            <h2>12 salariés</h2>
-            <p>
-              En tant que crèche associative à gestion parentale, les parents sont les employeurs du personnel : 3 éducatrices, 2 auxiliaires de puériculture, 4 aides auxiliaire, 1 infirmière et 2 agents d'entretien.
-            </p>
-          </div>
+<!-- Presentation -->
+
+<div class="padded-presentation">
+  <div class="container">
+    <h2 class="text-center">Le principe</h2>
+    <br>
+    <div class="text-center features">
+      <p>Décrivez votre panne à notre équipe de plombiers-chauffagistes qui vous enverra un <strong>prédiagnostic en moins de 24h</strong> :
+      <br>une fois accepté, prenez rdv pour réaliser votre propre dépannage avec une <strong>assistance technique par vidéo en direct</strong>.
+      </p>
+      <%= link_to "En savoir plus", "#myModal", "data-toggle" => "modal", class: "btn btn-default" %>
+      <%= render 'shared/modal' %>
+    </div>
+  </div>
+</div>
+
+<!-- Key added value -->
+
+<div class="wrapper-grey padded-presentation text-center" id="info">
+  <div class="container">
+    <h2 class="text-center">Les avantages</h2>
+    <div class="col-xs-12 col-sm-4">
+      <div class="features">
+        <%= image_tag "moins_cher.png", {class: "img-circle", id: "logo"}%>
+        <h2>Moins cher</h2>
+        <p>
+          En moyenne, une panne classique de plomberie coûte 100€ TTC, sans matériel. En choisissant de réparer vous-même votre panne avec notre aide à distance, vous paierez 2 fois moins cher (50€ pour 1h, pas de frais de déplacement).
+        </p>
         </div>
       </div>
+    <div class="col-xs-12 col-sm-4">
+      <div class="features">
+        <%= image_tag "plus_rapide.png", {class: "img-circle", id: "logo"}%>
+        <h2>Plus rapide</h2>
+        <p>
+          Terminées les longues journées sans chauffage ni wc en attendant l'arrivée du plombier débordé ! Une fois votre prédiagnostic accepté, un plombier vous propose sous 24h un rdv pour diagnostiquer et réparer ensemble votre panne.
+        </p>
+        </div>
+      </div>
+    <div class="col-xs-12 col-sm-4">
+      <div class="features">
+        <%= image_tag "accessible.png", {class: "img-circle", id: "logo"}%>
+        <h2>Accessible à tous</h2>
+        <p>
+          Vous n'avez aucun talent de bricoleur-réparateur ? Aucun problème : 80% des pannes de plomberie-chauffage peuvent se résoudre facilement, avec une simple caisse à outil. Vous avez des pièces à changer ? Nous vous les envoyons sous 48h.
+        </p>
+      </div>
     </div>
+  </div>
+</div>
 
-    <div class="wrapper-grey padded">
+<!-- Types of disfunctions -->
+
+<div class="padded-presentation">
+  <div class="container">
+    <h2 class="text-center">Tout type de panne</h2>
+    <br>
+    <div class="text-center features">
+      <div class="row">
+      <%= image_tag "Cumuls_trepied.jpg", {class: "avatar-large"}%>
+      <%= image_tag "evier.jpg", {class: "avatar-large"}%>
+      <%= image_tag "lavabo.jpg", {class: "avatar-large"}%>
+      <%= image_tag "mitigeur.jpg", {class: "avatar-large"}%>
+      <%= image_tag "wc_standard.jpg", {class: "avatar-large"}%>
+      <%= image_tag "wc_suspendu.jpg", {class: "avatar-large"}%>
+      </div>
+      <div class="row">
+      <%= image_tag "chaudiere-gaz.jpg", {class: "avatar-large"}%>
+      <%= image_tag "chaudiere-fioul.jpg", {class: "avatar-large"}%>
+      <%= image_tag "chauffe-eau.jpg", {class: "avatar-large"}%>
+      <%= image_tag "chauffe-bain.jpg", {class: "avatar-large"}%>
+      <%= image_tag "radiateur.jpg", {class: "avatar-large"}%>
+      <%= image_tag "canalisation.jpg", {class: "avatar-large"}%>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Parcours -->
+
+<div class="banner-parcours padded" style="background: linear-gradient(-225deg, rgba(0,101,168,0.2) 0%, rgba(0,36,61,0.6) 50%), url(<%= asset_path "laurent.JPG"%>);">
+  <div class="padded-presentation">
+    <div class="container">
+    <h2 class="text-center">20 ans de métier</h2>
+    <br>
+    <div class="col-xs-12 col-sm-4">
+    </div>
+    <div class="col-xs-12 col-sm-8">
+      <div class="features">
+      <p style="text-align: left; margin-right: 30px;"><strong>Laurent Sabatte</strong>, 40 ans
+      <br>
+      <br>D'abord installateur en thermique et sanitaire, puis dépanneur chaudières gaz et fioul, Laurent a créé son entreprise en 2003 pour devenir plombier-chauffagiste indépendant. Plus aucune panne ne lui résiste ! Toujours tourné vers l'innovation, Laurent met aujourd'hui son savoir-faire au service de tous ceux qui souhaitent réparer leurs propres pannes.
+      </p>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- Avis -->
+
+    <div class="wrapper-grey padded-presentation text-center">
       <div class="container">
-        <h2 class="text-center">Présentation</h2>
+        <h2 class="text-center">Nos clients nous recommandent</h2>
         <br>
         <div class="container text-center features">
           <div class="row">
-            <div class="col-xs-12 col-sm-3">
-            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/ext_3.jpg');">
+            <div class="col-xs-6 col-sm-3">
+            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= asset_path "sylvie.jpg"%>);">
               <div class="card-description">
-                <h2>Fonctionnement</h2>
+                <h2><strong>Sylvie</strong>, 43 ans</h2>
               </div>
             </div>
             </div>
             <div class="col-xs-12 col-sm-9">
-              <p class="text-left">La Crèche La Courte Échelle est une <strong>crèche associative a gestion parentale</strong>. Les parents participent au projet d'établissement et à l'éveil de leurs enfants. Le projet social, éducatif et pedagogique résulte d'un travail d'équipe. Il est principalement axé autour de l'enfant, ses besoins, sa famille.
+              <p class="text-left panne-description">Panne : <strong>baisse de pression d'une chaudière à gaz</strong>
+              <br>Prix du dépannage à distance : <strong>30€</strong> (soit une <strong>économie de 50€</strong>)
+              <br>Dépannage sans remplacement de pièce
               <br>
               <br>
-              Le groupe des bébés dispose d'un lieu privilégié où les enfants peuvent évoluer en toute sécurité et s'éveiller avec les nombreux jouets adaptés a leur motricité. Le groupe des moyens–grands n’est pas cloisonné, ce qui permet de le moduler selon l’évolution des enfants grâce à l’observation des membres du personnel.
+              <i><strong>"</strong>Après un prédiagnostic qui évoquait une fuite par la soupape de sécurité, au niveau du corps de chauffe, ou du vase d’expansion, le diagnostic à distance par vidéo m'a ensuite permis de regonfler tout simplement le vase d’expansion de ma chaudière. Un service rapide et super économique.<strong>"</strong></i>
               </p>
             </div>
           </div>
+
           <div class="row">
             <div class="col-xs-12 col-sm-9">
-              <p class="text-right" >L'équipe accompagne l’enfant vers une autonomie suffisante pour vivre au mieux la vie en collectivité. L'accueillir, l'aider au travers d'activités, ou lui permettre de s'intégrer dans un groupe de son âge font partie intégrante du rôle pédagogique.
+              <p class="text-right">Panne : <strong>problème sur cumulus (pas d'eau froide)</strong>
+              <br>Prix du dépannage à distance : <strong>75€</strong> (soit une <strong>économie de 150€</strong>)
+              <br>Dépannage avec remplacement de pièce sur cumulus (aquastat du ballon)
               <br>
               <br>
-              Temps d’éveil aux bébés, matériel éducatif adapté, échanges courts pour stimuler motricité, socialisation et autonomie : pour être ce <strong>lieu d'éveil</strong>, l’équipe est tout au long de la journée à l’écoute du rythme de l’enfant. Chaque semaine, des sorties sont prévues : parc et jardins municipaux, médiathèque (lectures), ateliers créatifs et musicaux, etc.</p>
+              <i><strong>"</strong>Je ne pensais pas pouvoir réparer moi-même mon cumulus ! Après notre 1er rdv en utilisant la vidéo avec Skype, j'ai reçu en moins de 48h la pièce défectueuse. Le 2nd rdv m'a ensuite permis de réparer mon cumulus à distance. Je ne pensais pas pouvoir faire ça tout seul, grâce à la vidéo !<strong>"</strong></i>
+              </p>
             </div>
-            <div class="col-xs-12 col-sm-3">
-              <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/top_2.jpg');">
-                <div class="card-description">
-                  <h2>Projet pédagogique</h2>
-                </div>
+            <div class="col-xs-6 col-sm-3">
+            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= asset_path "thomas.jpg"%>);">
+              <div class="card-description">
+                <h2><strong>Thomas</strong>, 38 ans</h2>
               </div>
             </div>
           </div>
+
           <div class="row">
-            <div class="col-xs-12 col-sm-3">
-            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/top_1.jpg');">
+            <div class="col-xs-6 col-sm-3">
+            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= asset_path "melanie.jpg"%>);">
               <div class="card-description">
-                <h2>Premiers jours</h2>
+                <h2><strong>Mélanie</strong>, 29 ans</h2>
               </div>
             </div>
-
             </div>
             <div class="col-xs-12 col-sm-9">
-              <p class="text-left">L'arrivée en collectivité est, pour l'enfant et son parent, une étape importante. C'est pourquoi une période de transition est prévue : <strong>l'adaptation</strong>. Cette rentrée progressive se fait sur 15 jours pendant lesquels les parents déposent leur enfant sur des périodes de plus en plus longues.
+              <p class="text-left">Panne : <strong>mécanisme de wc défectueux (problème de remplissage)</strong>
+              <br>Prix du dépannage à distance : <strong>40€</strong> (soit une <strong>économie de 60€</strong>)
+              <br>Dépannage avec remplacement de pièce (joint)
               <br>
               <br>
-              Il est important qu'une confiance mutuelle s'instaure entre l'équipe, le(s) parent(s) et l'enfant afin que ce dernier prenne ses repères et profite pleinement de cet univers nouveau qu'est la collectivité.</p>
+              <i><strong>"</strong>Le prédiagnostic me donnait un problème de joint ou de micro-fissure du mécanisme de remplissage. Après le diagnostic, j'ai reçu le joint en moins de 2 jours, puis nous avons procédé au dépannage par vidéo. Moi qui ne suis pas manuelle, le remplacement du joint n'était pas si difficile ! En plus, j'ai économisé 60€, de quoi m'offrir un bon resto.<strong>"</strong></i>
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="banner-inscription" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/placeit-9.png');">
-      <div class="banner-content">
-        <h2>Formulaire d'inscription</h2>
-        <p>Déposez votre demande d'inscription ou mettez-la à jour grâce à nos formulaires en ligne</p>
-        <form class="form-inline">
-        <%= link_to "Demande d'inscription", "#myModal", "data-toggle" => "modal", class: "clickable btn btn-primary" %>
-        <%= render 'shared/modal' %>
-        <%= link_to "Mise à jour de ma demande d'inscription", "https://crechelacourteechelle.typeform.com/to/b5rHtg", :target => "_blank", class: "btn btn-default" %>
-      </div>
-    </div>
-
-    <div class="wrapper-grey padded">
-      <div class="container">
-        <h2 class="text-center">Quelques photos</h2>
-        <p class="text-center">Fin 2015, la crèche a emménagé dans de nouveaux locaux, flambant neufs, mis à disposition par la Ville de Toulouse. Elle comprend plusieurs espaces répartis sur plus de 300m<sup>2</sup> : lieux de vie (un pour les petits, un autre pour les moyens-grands), salles de sommeil, salle à manger, cuisine, salles de change, vestiaire</p>
-        <br>
-        <div class="row">
-          <div class="col-xs-12 col-sm-4">
-            <div class="card-photo" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/top_1.jpg');">
-              <div class="card-description">
-                <h2>Grande salle</h2>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-4">
-            <div class="card-photo" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/salle.jpg');">
-              <div class="card-description">
-                <h2>Salle à manger</h2>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-4">
-            <div class="card-photo" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/ext_1.jpg');">
-              <div class="card-description">
-                <h2>Extérieur</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="padded-map text-center">
-      <h2>Notre adresse</h2>
-      <p>45 bis boulevard Matabiau, 31000 Toulouse</p>
-      <br>
-
-    <div id="map" style="width: 100%;height: 500px;"></div>
-
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-
-    <script type="text/javascript">
-    var myLatlng = new google.maps.LatLng(43.61519,1.44135);
-    var myOptions = {
-      zoom: 16,
-      center: myLatlng,
-      scrollwheel: false,
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}]
-    };
-    var map = new google.maps.Map(document.getElementById('map'), myOptions);
-    var marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map,
-      title:"You are here!"
-    });
-    </script>
-</div>
-
-
-
+  </div>

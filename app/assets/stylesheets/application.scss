@@ -10,6 +10,15 @@
 
 // Your CSS
 @import "layout/index";
+@import "layout/footer";
+@import "layout/navbar";
+@import "layout/utilities";
 @import "components/index";
+@import "components/alert";
+@import "components/avatars";
+@import "components/badges";
+@import "components/cards";
+@import "components/feature";
 @import "pages/index";
+@import "pages/home";
 @import "vendor/index";
