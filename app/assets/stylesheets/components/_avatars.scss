@@ -1,20 +1,46 @@
 .avatar {
-  width: 30px;
   border-radius: 50%;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 .avatar-large {
-  width: 50px;
+  height: 150px;
+  width: 150px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  background-size: cover !important;
+  color: white;
+  position: relative;
   border-radius: 50%;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.7);
 }
-.avatar-bordered {
-  width: 30px;
+.avatar-description {
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.avatar-description h2 {
+  font-size: 20px;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0 1px 6px rgba(0,0,0,1.4);
+  width:145px;
+  padding-top:40px;
+}
+.avatar-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
   border-radius: 50%;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
-  border: white 1px solid;
+  z-index:2;
+  background: black;
+  opacity: 0;
 }
-.avatar-square {
-  width: 30px;
-  border-radius: 0px;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
-  border: white 1px solid;
+.avatar-link:hover{
+  opacity: 0.1;
+  box-shadow: 0px 0px 5px 3px #656565;
 }

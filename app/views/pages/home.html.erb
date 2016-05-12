@@ -3,7 +3,7 @@
   <div class="banner-content">
     <h1>Réparez vous-même votre panne de plomberie
     <br>ou de chauffage avec l'aide d'un pro</h1>
-    <p>Plus rapide, moins cher, plus sûr</p>
+    <p>Plus rapide, moins cher, accessible à tous</p>
     <%= link_to "Décrire ma panne", "https://laurent30.typeform.com/to/vdixHQ", :target => "_blank", class: "navbar-wagon-item navbar-wagon-button btn" %>
     <div><a href="#info" class="banner-arrow floating"><i class="fa fa-angle-double-down"></i></a></div>
   </div>
@@ -17,7 +17,7 @@
     <br>
     <div class="text-center features">
       <p>Décrivez votre panne à notre équipe de plombiers-chauffagistes qui vous enverra un <strong>prédiagnostic en moins de 24h</strong> :
-      <br>une fois accepté, prenez rdv pour réaliser votre propre dépannage avec une <strong>assistance technique par vidéo en direct</strong>.
+      <br>une fois accepté, prenez rendez-vous pour réaliser votre propre dépannage avec une <strong>assistance technique par vidéo en direct</strong>.
       </p>
       <%= link_to "En savoir plus", "#myModal", "data-toggle" => "modal", class: "btn btn-default" %>
       <%= render 'shared/modal' %>
@@ -44,7 +44,7 @@
         <%= image_tag "plus_rapide.png", {class: "img-circle", id: "logo"}%>
         <h2>Plus rapide</h2>
         <p>
-          Terminées les longues journées sans chauffage ni wc en attendant l'arrivée du plombier débordé ! Une fois votre prédiagnostic accepté, un plombier vous propose sous 24h un rdv pour diagnostiquer et réparer ensemble votre panne.
+          Terminées les longues journées sans chauffage ni wc en attendant l'arrivée du plombier débordé ! Une fois votre prédiagnostic accepté, un plombier vous propose sous 24h un rendez-vous pour diagnostiquer et réparer ensemble votre panne.
         </p>
         </div>
       </div>
@@ -64,28 +64,150 @@
 
 <div class="padded-presentation">
   <div class="container">
+    <h2 class="text-center">Sélectionnez votre panne</h2>
+    <br>
+    <div class="text-center features">
+      <p>Cliquez sur l'image correspondant à votre panne pour remplir un rapide formulaire et recevoir ensuite votre prédiagnostic personnalisé :</p>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-offset-2 col-md-2" style="width: 160px;padding-bottom: 15px;">
+
+        <div class="avatar-large" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= asset_path "cumulus_mural.jpg"%>);">
+          <div class="avatar-description">
+            <h2>Cumulus</h2>
+          </div>
+          <a class="avatar-link" href="https://laurent30.typeform.com/to/As6SDW" target="_blank"></a>
+        </div>
+
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-2" style="width: 160px;padding-bottom: 15px;">
+
+        <div class="avatar-large" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= asset_path "wc_standard.jpg"%>);">
+          <div class="avatar-description">
+            <h2>WC</h2>
+          </div>
+          <a class="avatar-link" href="https://laurent30.typeform.com/to/as95ux" target="_blank"></a>
+        </div>
+
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-2" style="width: 160px;padding-bottom: 15px;">
+
+        <div class="avatar-large" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= asset_path "radiateur.jpg"%>);">
+          <div class="avatar-description">
+            <h2>Radiateur</h2>
+          </div>
+          <a class="avatar-link" href="https://laurent30.typeform.com/to/U65tYP" target="_blank"></a>
+        </div>
+
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-2" style="width: 160px;padding-bottom: 15px;">
+
+        <div class="avatar-large" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= asset_path "evier.jpg"%>);">
+          <div class="avatar-description">
+            <h2>Évier</h2>
+          </div>
+          <a class="avatar-link" href="https://laurent30.typeform.com/to/W0M7kZ" target="_blank"></a>
+        </div>
+
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-2" style="width: 160px;padding-bottom: 15px;">
+
+        <div class="avatar-large" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= asset_path "lavabo.jpg"%>);">
+          <div class="avatar-description">
+            <h2>Lavabo</h2>
+          </div>
+          <a class="avatar-link" href="https://laurent30.typeform.com/to/NTfRmo" target="_blank"></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-offset-2 col-sm-2" style="width: 160px;padding-bottom: 15px;">
+
+        <div class="avatar-large" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= asset_path "baignoire.jpg"%>);">
+          <div class="avatar-description">
+            <h2>Baignoire ou douche</h2>
+          </div>
+          <a class="avatar-link" href="https://laurent30.typeform.com/to/gCy45U" target="_blank"></a>
+        </div>
+
+      </div>
+      <div class="col-xs-12 col-sm-2" style="width: 160px;padding-bottom: 15px;">
+
+        <div class="avatar-large" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= asset_path "chaudiere-gaz.jpg"%>);">
+          <div class="avatar-description">
+            <h2>Chaudière au gaz</h2>
+          </div>
+          <a class="avatar-link" href="https://laurent30.typeform.com/to/RT8eed" target="_blank"></a>
+        </div>
+
+      </div>
+      <div class="col-xs-12 col-sm-2" style="width: 160px;padding-bottom: 15px;">
+
+        <div class="avatar-large" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= asset_path "chaudiere-fioul.jpg"%>);">
+          <div class="avatar-description">
+            <h2>Chaudière au fioul</h2>
+          </div>
+          <a class="avatar-link" href="https://laurent30.typeform.com/to/yjVsED" target="_blank"></a>
+        </div>
+
+      </div>
+      <div class="col-xs-12 col-sm-2" style="width: 160px;padding-bottom: 15px;">
+
+        <div class="avatar-large" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= asset_path "canalisation.jpg"%>);">
+          <div class="avatar-description">
+            <h2>Canalisations</h2>
+          </div>
+          <a class="avatar-link" href="https://laurent30.typeform.com/to/E4KhDw" target="_blank"></a>
+        </div>
+
+      </div>
+      <div class="col-xs-12 col-sm-2" style="width: 160px;padding-bottom: 15px;">
+
+        <div class="avatar-large" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= asset_path "autre.jpg"%>);">
+          <div class="avatar-description">
+            <h2>Autre panne</h2>
+          </div>
+          <a class="avatar-link" href="https://laurent30.typeform.com/to/Xrweht" target="_blank"></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="text-center features">
+      <p>Si vous rencontrez plusieurs pannes (exemple : cumulus + WC), cliquez sur le bouton suivant :</p>
+      <%= link_to "Décrire ma panne", "https://laurent30.typeform.com/to/vdixHQ", :target => "_blank", class: "navbar-wagon-item navbar-wagon-button btn" %>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Types of disfunctions -->
+
+<!-- <div class="padded-presentation"> -->
+<!--   <div class="container">
     <h2 class="text-center">Tout type de panne</h2>
     <br>
     <div class="text-center features">
       <div class="row">
-      <%= image_tag "Cumuls_trepied.jpg", {class: "avatar-large"}%>
-      <%= image_tag "evier.jpg", {class: "avatar-large"}%>
-      <%= image_tag "lavabo.jpg", {class: "avatar-large"}%>
-      <%= image_tag "mitigeur.jpg", {class: "avatar-large"}%>
-      <%= image_tag "wc_standard.jpg", {class: "avatar-large"}%>
-      <%= image_tag "wc_suspendu.jpg", {class: "avatar-large"}%>
+      <%= image_tag "cumulus_mural.jpg", {class: "avatar"}%>
+      <%= image_tag "wc_standard.jpg", {class: "avatar"}%>
+      <%= image_tag "radiateur.jpg", {class: "avatar"}%>
+      <%= image_tag "evier.jpg", {class: "avatar"}%>
+      <%= image_tag "lavabo.jpg", {class: "avatar"}%>
       </div>
       <div class="row">
-      <%= image_tag "chaudiere-gaz.jpg", {class: "avatar-large"}%>
-      <%= image_tag "chaudiere-fioul.jpg", {class: "avatar-large"}%>
-      <%= image_tag "chauffe-eau.jpg", {class: "avatar-large"}%>
-      <%= image_tag "chauffe-bain.jpg", {class: "avatar-large"}%>
-      <%= image_tag "radiateur.jpg", {class: "avatar-large"}%>
-      <%= image_tag "canalisation.jpg", {class: "avatar-large"}%>
+      <%= image_tag "baignoire.jpg", {class: "avatar"}%>
+      <%= image_tag "chaudiere-gaz.jpg", {class: "avatar"}%>
+      <%= image_tag "chaudiere-fioul.jpg", {class: "avatar"}%>
+      <%= image_tag "canalisation.jpg", {class: "avatar"}%>
+      <%= image_tag "autre.jpg", {class: "avatar"}%>
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- Parcours -->
 
